@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Events</title>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;600&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="Styles/Event.css">
+  <link rel="icon" href="favicon.png" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+</head>
+<body>
+  <!-- Navbar Section -->   
+  <header class="navbar">
+    <div class="navbar-container">
+        <div class="edlogo">
+            <a href="HomePage.Html"><img src="logo1.png" alt="EdStart Logo" /></a>
+        </div>
+        
+        <nav>
+          <ul class="nav-links">
+            <li><a href="HomePage.Html">Home</a></li>
+            <li><a href="About.html">About Us</a></li>
+            <li><a href="Event.html">Events</a></li>
+            <li><a href="Involved.html">Get Involved</a></li>
+            <li><a href="Blog.html">Articles</a></li>
+          </ul>
+        </nav>
+      </div>
+      
+  </header>
+    <div class="container">
+        
+        <div class="content">
+           
+            <h1 class="gradient-text">High School Webinar</h1>
+            <div class="time">
+
+                <div>
+                  <p id="days" class="para">00</p>
+                  <span class="below">Days</span>
+                </div>
+                <div>
+                  <p id="hours" class="para">00</p>
+                  <span class="below">Hours</span>
+                </div>
+                <div>
+                  <p id="minutes" class="para">00</p>
+                  <span class="below">Minutes</span>
+                  </div>
+                  <div>
+                    <p id="seconds" class="para">00</p>
+                    <span class="below">Seconds</span>
+                  </div>
+
+            </div>
+            <button type="button" class="button">Register Now</button>
+        </div>
+        <img src="rocket.png" alt="Rocket" class="rocket">
+    </div>
+
+<script>
+  var countdown= new Date("Jan 2, 2025 03:00:00").getTime();
+  var x= setInterval(function(){
+    var now= new Date().getTime();
+    var distance= countdown-now;
+    var days= Math.floor(distance/(1000*60*60*24));
+    var hours= Math.floor((distance%(1000*60*60*24))/(1000*60*60));
+    var minutes= Math.floor((distance%(1000*60*60))/(1000*60));
+    var seconds= Math.floor((distance%(1000*60))/1000);
+    document.getElementById("days").innerHTML= days;
+    document.getElementById("hours").innerHTML= hours;
+    document.getElementById("minutes").innerHTML= minutes;
+    document.getElementById("seconds").innerHTML= seconds;
+
+    if (distance<0){
+      clearInterval(x);
+      document.getElementById("days").innerHTML= "00";
+      document.getElementById("hours").innerHTML= "00";
+      document.getElementById("minutes").innerHTML= "00";
+      document.getElementById("seconds").innerHTML= "00";
+    }
+  },1000);
+</script>
+
+<footer>
+  <div class="footer-container">
+    <div class="social-icons">
+      <a href="https://www.instagram.com/edstart_usa/"><img src="instagram.png" alt="Instagram"></a>
+      <a href="https://www.youtube.com/channel/UCXeUFy6_NJO47eX6FBLMARg"><img src="youtube.png" alt="YouTube"></a>
+    </div>
+    <div class="contact-info">
+      <p>Email: puneetbandlapally@gmail.com</p>
+      <p>Phone: (425) 625-1326</p>
+    </div>
+  </div>
+</footer>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+</body>
+</html>

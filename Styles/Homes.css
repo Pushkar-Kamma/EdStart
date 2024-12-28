@@ -1,0 +1,338 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: #f9f9f9;
+    max-width: 100vw; /* Maximum width of the viewport */
+    overflow-x: hidden; /* Prevents horizontal scrolling */
+  }
+  
+  /* Navbar */
+  .navbar {
+    background: linear-gradient(90deg, #1A73E8, #004D99);
+    padding: 15px 20px;
+    color: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%; /* Ensures the navbar spans the full width */
+    height: 5vh;
+}
+
+.edlogo {
+    display: flex;
+    align-items: center;
+    margin-left: 20px; /* 20px space from the left */
+}
+
+.edlogo img {
+    width: 75px; /* Adjust logo size as needed */
+    height: auto;
+    margin-right: 10px; /* Adds spacing between logo and text */
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin-right: 20px; /* 20px space from the right */
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #FFC107;
+}
+
+.logo {
+    font-family: 'Merriweather', serif;
+    font-size: 24px;
+}
+
+.accent {
+    color: #ff9100;
+}
+
+  /* Hero Section */
+  .hero {
+    min-height: 500px;
+    height:auto;
+    text-align: center;
+    background: linear-gradient(180deg, #004D99, #002B5C), url('heroimg.png') center/cover no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+  }
+  .hero h1 {
+    font-family: 'Merriweather', serif;
+    font-size: 160px;
+  }
+  .hero h2 {
+    
+    font-family:  "Segoe Script", cursive;
+    font-size: 60px;
+  }
+  .hero .highlight {
+    color: #FFC107;
+    font-weight: bold;
+  }
+
+  
+  /* Intro Section */
+  .intro {
+    padding: 50px 20px;
+    text-align: center;
+    background: linear-gradient(180deg, #F4F4F4, #E6F0FA);
+    font-size: 18px;
+  }
+  
+  /* Our Work Section */
+  .our-work {
+    padding: 50px 20px;
+    text-align: center;
+    background: linear-gradient(135deg, #FFB74D, #FF9800);
+  }
+  .work-cards {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+  }
+  .work-card {
+    background: linear-gradient(135deg, #fff493, #FFFFFF);
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    transition: transform 0.3s ease;
+  }
+  .work-card:hover {
+    transform: translateY(-10px);
+  }
+  .our-work h2{
+        font-family: 'Nunito',sans-serif;
+        font-size: 80px;
+        font-weight: 900;
+    }
+  
+  /* Impact Section */
+  .impact {
+    padding: 50px 20px;
+    text-align: center;
+    background:linear-gradient(135deg, #FFD54F, #FF8F00) ;
+    color: #333;
+  }
+  .impact h2 {
+    font-family: 'Nunito',sans-serif;
+    font-size: 80px;
+    font-weight: 900;
+  }
+  .impact-stats {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    color: #004D99;
+    font-weight: bold;
+    font-family: 'Raleway', sans-serif;
+    font-size: 25px;
+    margin-bottom: 10px;
+    color: #004D99;
+    font-weight: 700;
+    
+  }
+  .stat h3 {
+    font-size: 40px;
+    color: Black;
+  }
+  
+  /* Newsletter Section */
+  .newsletter {
+    padding: 50px 20px;
+    text-align: center;
+    background:linear-gradient(135deg, #FFD180, #FFC107);
+  }
+  .button {
+    display: inline-block;
+    background: #004D99;
+    color: #fff;
+    padding: 12px 25px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s ease;
+  }
+  .button:hover {
+    background: #002B5C;
+  }
+  .newsletter h2{
+    font-family: 'Nunito',sans-serif;
+    font-size: 80px;
+    font-weight: 900;
+    color: #333;
+  }
+  .newsletter p{
+    font-family: 'Raleway', sans-serif;
+    color: black;
+    line-height: 1.6;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-weight: 700;
+  }
+  
+  /* Footer Section */
+  footer {
+    background: linear-gradient(90deg, #1A73E8, #004D99);
+    color: #fff;
+    padding: 20px;
+  }
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    max-height: 3.5vh;
+  }
+  .social-icons img {
+    width: 50px;
+    margin: 0 10px;
+  }
+  .volunteer {
+    width: 100vw; /* Full width */
+    min-height: 10vh; /* Adjusted height for a smaller section */
+    text-align: center;
+    background: linear-gradient(135deg, #FFECB3, #FFD54F);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+    margin: 0; /* Removes white space */
+    padding: 20px; /* Ensures internal spacing */
+  }
+  
+  .volunteer-content {
+    max-width: 900px;
+    padding: 20px;
+  }
+  
+  .volunteer-content h2 {
+    font-family: 'Nunito',sans-serif;
+    font-size: 80px;
+    font-weight: 900;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .volunteer-content p {
+
+    font-family: 'Raleway', sans-serif;
+    color: black;
+    line-height: 1.6;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-weight: 700;
+  
+  }
+  
+  .volunteer-content .highlight {
+    color: #004D99;
+    font-weight: bold;
+    font-style: italic;
+  }
+  
+  .volunteer .button {
+    display: inline-block;
+    background: #004D99;
+    color: #fff;
+    padding: 12px 30px; /* Smaller button for a proportional look */
+    border-radius: 30px;
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    transition: all 0.3s ease;
+  }
+  
+  .volunteer .button:hover {
+    background: #002B5C;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  }
+  /* Our Mission Section */
+.our-mission {
+    text-align: center;
+    background: linear-gradient(135deg, #FFC107, #FF7043);
+    color: #333;
+    padding: 60px 20px;
+
+  }
+  
+  .our-mission h2 {
+    font-family: 'Nunito',sans-serif;
+    font-size: 80px;
+    font-weight: 900;
+    margin-bottom: 30px;
+    color: #333;
+  }
+  
+  .mission-content {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+  }
+  
+  .mission-item {
+    text-align: center;
+    width: 300px;
+    margin: 0 auto;
+  }
+  
+  .mission-icon {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #fff; /* Fallback for images */
+  }
+  
+  .mission-item h3 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 25px;
+    margin-bottom: 10px;
+    color: #004D99;
+    font-weight: 700;
+  }
+  
+  .mission-item p {
+    font-family: 'Raleway', sans-serif;
+    color: black;
+    line-height: 1.6;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-weight: 700;
+  }
+  
