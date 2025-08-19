@@ -336,3 +336,71 @@
     font-weight: 700;
   }
   
+
+
+
+
+
+
+
+
+
+  /*About.html code*/
+
+
+/* Problem Section */
+.problem-section {
+  background: linear-gradient(135deg, #FFB74D, #FF9800);
+  padding: 40px 20px;
+}
+
+.problem-section h2 {
+  font-family: 'Nunito', sans-serif;
+  font-size: 80px;
+  font-weight: 900;
+  margin-bottom: 40px;
+  color: #333;
+  text-align: center;
+}
+
+.problem-content {
+  display: flex;
+  align-items: flex-start;  /* align image & text at top */
+  justify-content: center;
+  gap: 40px;                /* spacing between image & text */
+  max-width: 1200px;
+  margin: 0 auto;           /* center the content */
+}
+
+.problem-image {
+  width: 40vh;
+  height: auto;
+  border-radius: 8px;
+  flex-shrink: 0;           /* prevents image from shrinking */
+}
+
+.problem-content p {
+  font-family: 'Raleway', sans-serif;
+  color: #000;
+  font-size: 25px;
+  line-height: 1.6;
+  font-weight: 700;
+  text-align: justify;
+  max-width: 700px;         /* keeps text block readable */
+}
+
+/* Responsive layout for tablets & mobiles */
+@media (max-width: 900px) {
+  .problem-content {
+      flex-direction: column;
+      text-align: center;
+  }
+  .problem-image {
+      margin-bottom: 20px;
+      padding-left: 0;
+  }
+  .problem-content p {
+      padding-left: 0;
+      text-align: justify;
+  }
+}
