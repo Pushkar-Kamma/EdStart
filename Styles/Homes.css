@@ -259,3 +259,31 @@ body {
   }
 }
 
+/* ===== Section Background Alternating (Gray / White) ===== */
+
+/* Base styles for sections */
+section {
+  padding: 60px 20px;
+}
+
+/* White sections (default) */
+.problem-section,
+.our-mission,
+.volunteer {
+  background: #ffffff;
+}
+
+/* Light gray sections */
+.our-solution,
+.newsletter {
+  background: #f7f7f7;   /* soft gray */
+}
+
+/* Hero stays as is (dark gradient) */
+
+
+/* Optional: unify footer */
+footer {
+  background: #333;
+  color: #f5f5f5;
+}
