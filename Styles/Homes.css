@@ -283,3 +283,7 @@ section {
 
 
 
+.contact-info {
+  margin-left: auto;   /* pushes it to the right */
+  text-align: right;   /* aligns the text inside */
+}
