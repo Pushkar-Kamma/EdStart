@@ -1,159 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>EdStart - Empowering Education</title>
-  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;600&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="Styles/Homes.css">
-  <link rel="icon" href="favicon.png" type="image/x-icon">
-  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-FMWZY0BXZG"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'G-FMWZY0BXZG');
-</script>
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600;700&family=Merriweather:wght@700;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="Styles/Homes.css">
+
+  <!-- AOS (animations) -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+
+  <!-- Favicon -->
+  <link rel="icon" href="favicon.png" type="image/x-icon">
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-FMWZY0BXZG"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-FMWZY0BXZG');
+  </script>
 </head>
 <body>
-  <!-- Navbar Section -->   
+  <!-- Navbar -->
   <header class="navbar">
     <div class="navbar-container">
-        <div class="edlogo">
-            <a href="index.html"><img src="logo1.png" alt="EdStart Logo" /></a>
-        </div>
-        
-        <nav>
-          <ul class="nav-links">
-           <!--  <li><a href="index.html">Home</a></li>
-           <li><a href="About.html">About Us</a></li>
-            <li><a href="Event.html">Events</a></li>
-            <li><a href="Involved.html">Get Involved</a></li>
-            <li><a href="Blog.html">Articles</a></li>-->
-          </ul>
-        </nav>
-      </div>
-      
+      <a class="brand" href="index.html">
+        <img src="logo1.png" alt="EdStart Logo"/>
+        <span class="brand-name">EdStart</span>
+      </a>
+      <!-- (intentionally empty right side for now) -->
+    </div>
   </header>
 
-  <!-- Hero Section -->
+  <!-- Hero -->
   <section class="hero">
     <div class="hero-content">
-        <h1 data-aos="zoom-in" data-aos-duration="2000"><b><Span class="accent">Ed</Span>Start</b></h1>
-      <h2 data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="1100">The<span class="highlight"> Boost</span> that <span class="highlight">You</span> need</h2>
-      
+      <h1 data-aos="zoom-in" data-aos-duration="1200"><b><span class="accent">Ed</span>Start</b></h1>
+      <h2 data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="200">
+        The <span class="highlight">Head Start</span> to <span class="highlight">Your Future</span>
+      </h2>
+
+      <div class="hero-buttons" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="400">
+        <a href="https://forms.gle/Hc4UbDKLcQMSi3eo9" class="button primary" target="_blank">Validation Form</a>
+        <a href="https://forms.gle/izyZEvPS8RvPo3fF7" class="button secondary" target="_blank">Join Waitlist</a>
+      </div>
     </div>
+    <div class="hero-wave" aria-hidden="true"></div>
   </section>
 
-
+  <!-- Problem (image left, title+text right) -->
   <section class="problem-section">
-    <div class="content-container">
-      <h2 data-aos="fade-up" data-aos-duration="2000">Our Problem</h2>
-      <div class="problem-content">
-        <img src="problem.png" alt="Our Problem" class="problem-image" class="mission-item"data-aos="zoom-in-right" data-aos-duration="2000"data-aos-delay="500">
-        <p class="mission-item"data-aos="zoom-in-left" data-aos-duration="2000"data-aos-delay="500">
-            Every year, 2.4 million immigrants arrive in the U.S., many with school-aged children. In King County, where immigrants make up 25% of the population, students face challenges like learning English, adapting to a new culture, and keeping up in school. Around 9.6% of public school students nationally are English Language Learners (ELLs), a trend reflected in King County, where resources often fall short.</p>
+    <div class="content-container problem-grid">
+      <div class="problem-media" data-aos="zoom-in-right" data-aos-duration="1200">
+        <img src="problem.png" alt="Students facing barriers" class="problem-image">
+      </div>
+      <div class="problem-copy" data-aos="zoom-in-left" data-aos-duration="1200" data-aos-delay="150">
+        <h2>Our Problem</h2>
+        <p>
+          Every year, 2.4 million immigrants arrive in the U.S., many with school-aged children. In King County, where immigrants make up 25% of the population, students face challenges like learning English, adapting to a new culture, and keeping up in school. Around 9.6% of public school students nationally are English Language Learners (ELLs), a trend reflected in King County, where resources often fall short.
+        </p>
       </div>
     </div>
   </section>
 
-  <!-- Our Solution Section -->
-  <section class="solution-section">
-    <div class="content-container">
-      <h2 data-aos="fade-up" data-aos-duration="2000">Our Solution</h2>
-      <div class="solution-content">
-        <p data-aos="zoom-in-right" data-aos-duration="2000"data-aos-delay="500">We aim to raise awareness regarding the struggles of the newly admitted immigrant students in King County. We aim to highlight the different educational opportunities available for these students from quest for young students to the difference between various classes such as APs and Honors, emphasizing each and different parts of school, allowing them to familiarize and understand the way of school.</p>
-        <img src="solution.png" alt="Our Solution" class="solution-image" data-aos="zoom-in-left" data-aos-duration="2000"data-aos-delay="500">
-      </div>
-    </div>
-  </section>
-
-  <!-- Our Mission Section -->
-<section class="our-mission">
-    <h2 data-aos="fade-up" data-aos-duration="2000" >Our Mission</h2>
-    <div class="mission-content" >
-      <!-- Mission Part 1 -->
-      <div class="mission-item"data-aos="fade-right" data-aos-duration="2000">
-        <div class="mission-icon" style="background-image: url('mission1.png');"></div>
-        <h3>Empower Immigrants</h3>
-        <p>Providing tools and resources to help immigrants confidently navigate the education system.</p>
-      </div>
-      <!-- Mission Part 2 -->
-      <div class="mission-item" data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="500" >
-        <div class="mission-icon" style="background-image: url('mission2.png');"></div>
-        <h3>Engage Communities</h3>
-        <p>Building strong networks and encouraging collaboration between students and educators.</p>
-      </div>
-      <!-- Mission Part 3 -->
-      <div class="mission-item" data-aos="fade-left" data-aos-duration="2000" data-aos-delay="1000">
-        <div class="mission-icon" style="background-image: url('mission3.png');"></div>
-        <h3>Guidance</h3>
-        <p>Guiding students to achieve their fullest potential with dedicated support and thoughtful direction.</p>
-      </div>
-    </div>
-  </section>
-  
-
-  <!-- Our Work Section -->
-  <section class="our-work">
-    <h2 data-aos="fade-up" data-aos-duration="2000">Our Work</h2>
-    <div class="work-cards">
-      
+  <!-- Our Solution (3 cards) -->
+  <section class="our-solution">
+    <h2 data-aos="fade-up" data-aos-duration="1000">Our Solution</h2>
+    <div class="solution-cards">
       <!-- Mentorship -->
-      <div class="work-card" data-aos="fade-right" data-aos-duration="2000" data-aos-delay="500">
-        <img src="icon2.png" alt="Mentorship">
+      <article class="solution-card" data-aos="fade-up" data-aos-delay="100">
+        <img src="icon2.png" alt="Mentorship" />
         <h3>Mentorship</h3>
-        <p>We offer <strong>3-month long mentorship programs</strong> to support immigrant students and families.</p>
-      </div>
-  
+        <p>We offer <strong>3-month mentorships</strong> pairing students with trained mentors for guidance, goal-setting, and accountability.</p>
+      </article>
       <!-- Seminars -->
-      <div class="work-card" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="600">
-        <img src="icon1.png" alt="Seminars">
+      <article class="solution-card" data-aos="fade-up" data-aos-delay="200">
+        <img src="icon1.png" alt="Seminars" />
         <h3>Seminars</h3>
-        <p>We give <strong>seminars in schools</strong> and also host engaging <em>online workshops</em>.</p>
-      </div>
-  
+        <p>We bring <strong>in-school seminars</strong> and <em>online workshops</em> to explain classes, programs, and opportunities clearly.</p>
+      </article>
       <!-- Articles -->
-      <div class="work-card" data-aos="fade-left" data-aos-duration="2000" data-aos-delay="700">
-        <img src="icon3.png" alt="Articles">
+      <article class="solution-card" data-aos="fade-up" data-aos-delay="300">
+        <img src="icon3.png" alt="Articles" />
         <h3>Articles</h3>
-        <p>We provide <strong>helpful articles</strong> and resources on our website for families and educators.</p>
-      </div>
-  
+        <p>Helpful guides and resources on our site—for families and educators—updated with practical tips students can use today.</p>
+      </article>
     </div>
   </section>
-  
 
+  <!-- Our Mission (interactive flip cards) -->
+  <section class="our-mission">
+    <h2 data-aos="fade-up" data-aos-duration="1000">Our Mission</h2>
+    <div class="mission-grid">
+      <div class="mission-card" data-aos="flip-left" data-aos-duration="900">
+        <div class="card-face card-front">
+          <div class="mission-icon" style="background-image:url('mission1.png');"></div>
+          <h3>Empower</h3>
+        </div>
+        <div class="card-face card-back">
+          <p>Give families clear tools to navigate school with confidence—from enrollment to advanced classes.</p>
+        </div>
+      </div>
 
-  <!-- Newsletter Section -->
-<section class="newsletter">
-  <h2 data-aos="fade-up" data-aos-duration="1000">Stay Updated</h2>
-  <div data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="700">
-    <p>Subscribe to our <em>monthly newsletter</em> for <span class="highlight">insights</span>, updates, and tools that empower students and families.</p>
-    <a href="https://forms.gle/x76XQnC33KxKvQ3H9" class="button" target="_blank">Subscribe to Newsletter</a>
-  </div>
-</section>
+      <div class="mission-card" data-aos="flip-left" data-aos-duration="900" data-aos-delay="150">
+        <div class="card-face card-front">
+          <div class="mission-icon" style="background-image:url('mission2.png');"></div>
+          <h3>Engage</h3>
+        </div>
+        <div class="card-face card-back">
+          <p>Connect students, mentors, and educators to build supportive, culturally responsive communities.</p>
+        </div>
+      </div>
 
-<!-- Volunteer Section -->
-<section class="volunteer">
-  <div class="volunteer-content">
-    <h2 data-aos="fade-up" data-aos-duration="1000">Volunteer with Us</h2>
-    <div data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="300">
-      <p>
-        Make a <strong>lasting difference</strong> by supporting immigrant families in their journey through the education system.
-        Your <span class="highlight">time and effort</span> can empower students to achieve their dreams.
-      </p>
-      <a href="https://forms.gle/x76XQnC33KxKvQ3H9" class="button" target="_blank">Join Us</a>
+      <div class="mission-card" data-aos="flip-left" data-aos-duration="900" data-aos-delay="300">
+        <div class="card-face card-front">
+          <div class="mission-icon" style="background-image:url('mission3.png');"></div>
+          <h3>Guide</h3>
+        </div>
+        <div class="card-face card-back">
+          <p>Provide step-by-step pathways—ESL, AP/Honors, clubs, college readiness—so goals feel achievable.</p>
+        </div>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
+  <!-- Newsletter -->
+  <section class="newsletter">
+    <h2 data-aos="fade-up" data-aos-duration="900">Stay Updated</h2>
+    <div data-aos="zoom-in" data-aos-duration="900" data-aos-delay="150">
+      <p>Subscribe to our <em>monthly newsletter</em> for <span class="highlight">insights</span>, updates, and tools that empower students and families.</p>
+      <a href="https://forms.gle/x76XQnC33KxKvQ3H9" class="button primary" target="_blank">Subscribe to Newsletter</a>
+    </div>
+  </section>
 
-  <!-- Footer Section -->
+  <!-- Volunteer -->
+  <section class="volunteer" id="get-involved">
+    <div class="volunteer-content">
+      <h2 data-aos="fade-up" data-aos-duration="900">Volunteer with Us</h2>
+      <div data-aos="zoom-in" data-aos-duration="900" data-aos-delay="150">
+        <p>Make a <strong>lasting difference</strong> by supporting immigrant families in their journey through the education system. Your <span class="highlight">time and effort</span> empowers students to achieve their dreams.</p>
+        <a href="https://forms.gle/x76XQnC33KxKvQ3H9" class="button secondary" target="_blank">Join Us</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
   <footer>
     <div class="footer-container">
       <div class="social-icons">
@@ -166,9 +164,16 @@
       </div>
     </div>
   </footer>
+
+  <!-- Scripts -->
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
     AOS.init();
+
+    // Enable flip on tap for touch devices
+    document.querySelectorAll('.mission-card').forEach(card=>{
+      card.addEventListener('click', ()=> card.classList.toggle('flipped'));
+    });
   </script>
 </body>
 </html>
