@@ -211,3 +211,51 @@ footer{
   display:flex; align-items:center; justify-content:space-between;
 }
 .social-icons img{ width:36px; margin-right:10px; filter: drop-shadow(0 2px 2px rgba(0,0,0,.2)); }
+
+/* --- Problem section polish --- */
+.problem-section .problem-grid {
+  display: grid;
+  grid-template-columns: minmax(280px, 520px) 1fr; /* image | text */
+  column-gap: clamp(32px, 5vw, 72px);             /* more gap between image and text */
+  align-items: center;
+}
+
+/* Ensure image scales cleanly */
+.problem-section .problem-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 16px;
+}
+
+/* Heading + paragraph type & spacing */
+.problem-section .problem-copy h2 {
+  font-family: 'Nunito', system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  margin: 0 0 12px;
+}
+
+.problem-section .problem-copy p {
+  /* stop the weird spacing */
+  text-align: left;                 /* override any global justify */
+  text-wrap: pretty;                /* nicer line breaks (supported in modern browsers) */
+  hyphens: auto;                    /* optional, helps avoid long gaps if you keep justify elsewhere */
+  line-height: 1.7;
+  max-width: 68ch;                  /* readable line length */
+  margin: 0;
+  font-family: 'Nunito', system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; /* new font */
+  font-size: 1.05rem;
+}
+
+/* Optional: set site-wide font */
+body {
+  font-family: 'Nunito', system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+
+/* Mobile stacking */
+@media (max-width: 900px) {
+  .problem-section .problem-grid {
+    grid-template-columns: 1fr;
+    row-gap: 20px;
+  }
+}
+
