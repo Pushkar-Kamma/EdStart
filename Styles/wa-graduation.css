@@ -1,0 +1,253 @@
+/* ---------- Theme ---------- */
+:root{
+    /* Your brand gradients */
+    --grad1-start: #9ad2ed;
+    --grad1-end:   #216bc6;
+    --grad2-start: #7dadba;
+    --grad2-end:   #77c9f1;
+  
+    --ink: #0e2540;
+    --muted: #4b5b6c;
+    --accent: #1f6bc7;
+    --bg-card: #ffffff;
+    --ring: rgba(33,107,198,0.18);
+    --shadow: 0 10px 30px rgba(14,37,64,.08), 0 2px 8px rgba(14,37,64,.06);
+  }
+  
+  /* Layered gradients behind the content */
+  body{
+    margin:0;
+    color: var(--ink);
+    font-family: 'Merriweather', serif;
+    line-height: 1.7;
+    background:
+      radial-gradient(1000px 600px at 10% -10%, var(--grad2-start), transparent 70%),
+      radial-gradient(800px 500px at 90% 10%, var(--grad2-end), transparent 70%),
+      linear-gradient(135deg, var(--grad1-start), var(--grad1-end));
+    background-attachment: fixed;
+  }
+  
+  /* Do not touch navbar, hero, or footer structure (copied as-is). */
+  /* The following styles are kept identical to your sample so nothing changes. */
+  .navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: #ff9528;
+    padding: 15px 20px;
+    color: #111;
+    box-shadow:
+      0 10px 20px rgba(0,0,0,0.12),
+      0 3px 6px rgba(0,0,0,0.08);
+  }
+  .navbar-container { display:flex; justify-content:space-between; align-items:center; width:100%; height:9vh; }
+  .edlogo { display:flex; align-items:center; margin-left:20px; font-family:'Merriweather', serif; font-size:35px; color:#111; }
+  .edlogo img { width:50px; height:auto; margin-right:10px; margin-top:25px; margin-bottom:10px; margin-left:100px; }
+  .nav-links { list-style:none; display:flex; gap:24px; margin-right:300px; font-family:'Inter', sans-serif; font-size:18px; }
+  .nav-links a {
+    color:#111; text-decoration:none; font-weight:700; padding:8px 14px; border-radius:10px;
+    transition: transform .2s ease, box-shadow .2s ease, background-color .2s ease, color .2s ease;
+    will-change: transform;
+  }
+  .nav-links a:hover,
+  .nav-links a:focus-visible { background:#fff; color:#111; transform:translateY(-1px); box-shadow:0 6px 14px rgba(0,0,0,0.12); outline:none; }
+  .nav-links a[aria-current="page"], .nav-links a.active { background-color:rgba(255,255,255,0.9); box-shadow: inset 0 0 0 2px rgba(0,0,0,0.08); }
+  .nav-links a:visited { color: inherit; background: none; box-shadow: none; }
+  .edlogo a, .edlogo span, .edlogo { color:#000 !important; text-decoration:none !important; background:none !important; -webkit-background-clip: initial !important; background-clip: initial !important; }
+  .edlogo .logo-text .ed { color:#020046 !important; }
+  .edlogo .logo-text .start { color:#000; }
+  .edlogo a:hover, .edlogo a:visited, .edlogo a:focus { color:#000 !important; text-decoration:none !important; }
+  
+  .hero {
+    min-height: 500px;
+    height: auto;
+    text-align: center;
+    background: linear-gradient(180deg, #004D99, #002B5C), url('heroimg.png') center/cover no-repeat;
+    display: flex; flex-direction: column; justify-content: center; color: #fff;
+  }
+  .hero h1 { font-family:'Merriweather', serif; font-size:160px; }
+  .hero h2 { font-family:"Segoe Script", cursive; font-size:60px; }
+  .hero .highlight { color:#FFC107; font-weight:bold; }
+  
+  footer {
+    background: linear-gradient(90deg, #1A73E8, #004D99);
+    color: #fff; padding: 20px;
+  }
+  .footer-container { display:flex; justify-content:space-between; align-items:center; max-width:1200px; margin:0 auto; max-height:3.5vh; }
+  .social-icons img { width:50px; margin:0 10px; }
+  
+  /* ---------- Article Layout ---------- */
+  .page-wrap{ padding: clamp(20px, 3vw, 40px); }
+  .pro-article{
+    max-width: 1000px;
+    margin: 0 auto 64px auto;
+    background: var(--bg-card);
+    border-radius: 18px;
+    box-shadow: var(--shadow);
+    padding: clamp(24px, 4vw, 48px);
+    border: 1px solid var(--ring);
+  }
+  
+  /* ---------- Header ---------- */
+  .article-header{ margin-bottom: 18px; }
+  .kicker{
+    font-family:'Raleway', sans-serif; text-transform:uppercase; letter-spacing:.12em;
+    font-weight:600; color:var(--accent); margin:0 0 6px 0; font-size:.8rem;
+  }
+  .article-title{ margin:0 0 6px 0; line-height:1.25; font-size: clamp(1.6rem, 2.4vw, 2.2rem); font-weight:700; }
+  .subtitle{ color:var(--muted); margin:0 0 10px 0; }
+  .meta, .disclaimer{ font-size:.95rem; color:var(--muted); margin:4px 0; }
+  .disclaimer strong{ color:#1b3b63; }
+  
+  /* ---------- Typography ---------- */
+  h2{
+    font-size: clamp(1.25rem, 2vw, 1.6rem);
+    margin: 28px 0 10px 0;
+    font-family:'Raleway', sans-serif;
+    font-weight:600;
+    line-height:1.3;
+  }
+  h3{
+    font-size: clamp(1.05rem, 1.6vw, 1.2rem);
+    margin: 18px 0 8px 0;
+    font-family:'Raleway', sans-serif;
+    font-weight:600;
+  }
+  p{ margin:10px 0 14px 0; }
+  .lede{ color:#2a3c4f; }
+  
+  /* ---------- Lists ---------- */
+  ul{ padding-left:1.2rem; margin:8px 0 14px 0; }
+  ul.tick { list-style: none; padding-left:0; }
+  ul.tick li{
+    position: relative; padding-left: 26px; margin: 10px 0;
+  }
+  ul.tick li::before{
+    content: "✓";
+    position: absolute; left:0; top: 0.05rem; font-weight:700; color: var(--accent);
+  }
+  ul.dash{ list-style: none; padding-left:0; }
+  ul.dash li{ position:relative; padding-left:18px; margin:8px 0; }
+  ul.dash li::before{ content:"—"; position:absolute; left:0; color:#7a8aa0; }
+  
+  /* ---------- Notes / Callouts ---------- */
+  .note{
+    background: linear-gradient(135deg, #f6fbff, #eef6ff);
+    border: 1px solid var(--ring);
+    border-radius: 12px;
+    padding: 12px 14px;
+    font-size: .975rem;
+    box-shadow: 0 4px 10px rgba(14,37,64,.04);
+  }
+  .keybox{
+    background: #f9fbff;
+    border: 1px solid var(--ring);
+    border-radius: 12px;
+    padding: 14px 16px;
+    box-shadow: 0 4px 10px rgba(14,37,64,.04);
+  }
+  
+  /* ---------- Cards & Grids ---------- */
+  .grid-2{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
+  .card{
+    background:#fafcff;
+    border:1px solid var(--ring);
+    border-radius:14px;
+    padding:14px 16px;
+    box-shadow:0 4px 10px rgba(14,37,64,.04);
+  }
+  
+  /* ---------- Tables ---------- */
+  .table-wrap{ overflow-x:auto; margin: 8px 0 16px; }
+  .table{
+    width:100%;
+    border-collapse: collapse;
+    font-size: 0.98rem;
+  }
+  .table thead th{
+    text-align:left;
+    padding:12px 12px;
+    background: linear-gradient(135deg, #f3f8ff, #eaf3ff);
+    border-bottom: 1px solid var(--ring);
+    font-family:'Raleway', sans-serif;
+    letter-spacing:.02em;
+  }
+  .table tbody td{
+    padding:12px 12px;
+    border-bottom: 1px solid #eef2f6;
+    vertical-align: top;
+  }
+  .table tbody tr:nth-child(odd){ background:#fcfeff; }
+  .table tbody tr.total td{
+    background: #f1f7ff;
+    border-top: 2px solid var(--ring);
+    font-weight:700;
+  }
+  .table.credits td:first-child{ width: 26%; }
+  .table.pathways td:first-child{ width: 22%; }
+  
+  /* ---------- Link Grid ---------- */
+  .link-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 14px;
+    margin-top: 10px;
+  }
+  .link-card{
+    background: #fafcff;
+    border: 1px solid var(--ring);
+    border-radius: 14px;
+    padding: 14px 16px;
+    box-shadow: 0 4px 10px rgba(14,37,64,.04);
+  }
+  .link-card h3{ margin: 0 0 8px 0; }
+  .link-card ul{ margin: 6px 0 0 0; padding-left:1.1rem; }
+  .link-card li{ margin: 6px 0; }
+  .link-card a{
+    color: var(--accent);
+    text-decoration: none;
+    border-bottom: 1px dashed rgba(31,107,199,.35);
+    transition: border-color .2s ease, color .2s ease;
+  }
+  .link-card a:hover{
+    color: #0f57b1;
+    border-bottom-color: rgba(31,107,199,.7);
+  }
+  
+  /* ---------- Misc ---------- */
+  .plan + .plan{ margin-top: 10px; }
+  .footnote{ color: var(--muted); font-size:.95rem; margin-top: 12px; }
+  
+  /* ---------- Buttons (if needed) ---------- */
+  .btn{
+    display: inline-block;
+    padding: 10px 16px;
+    border-radius: 10px;
+    background: linear-gradient(135deg, var(--grad2-start), var(--grad2-end));
+    color: white;
+    font-weight: 700;
+    text-decoration: none;
+    box-shadow: 0 6px 18px rgba(15,60,110,.25);
+    transition: transform .15s ease, box-shadow .15s ease;
+  }
+  .btn:hover{ transform: translateY(-1px); box-shadow: 0 8px 24px rgba(15,60,110,.30); }
+  
+  /* ---------- Accessibility ---------- */
+  a:focus{ outline: 3px solid #98c7ff; outline-offset: 2px; }
+  
+  /* ---------- Responsive ---------- */
+  @media (max-width: 980px){
+    .grid-2{ grid-template-columns: 1fr; }
+    .link-grid{ grid-template-columns: 1fr; }
+  }
+  @media (max-width: 700px){
+    .nav-links{ margin-right: 0; }
+    .edlogo img{ margin-left: 20px; }
+    .hero h1{ font-size: 64px; } /* Safety shrink on small screens */
+    .hero h2{ font-size: 28px; }
+  }
+  

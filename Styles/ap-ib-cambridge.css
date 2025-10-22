@@ -1,0 +1,199 @@
+/* ---------- Theme ---------- */
+:root{
+    /* Your gradients */
+    --grad1-start: #9ad2ed;
+    --grad1-end:   #216bc6;
+    --grad2-start: #7dadba;
+    --grad2-end:   #77c9f1;
+  
+    --ink: #0e2540;
+    --muted: #4b5b6c;
+    --accent: #1f6bc7;
+    --bg-card: #ffffff;
+    --ring: rgba(33,107,198,0.18);
+    --shadow: 0 10px 30px rgba(14,37,64,.08), 0 2px 8px rgba(14,37,64,.06);
+  }
+  
+  /* Gentle layered gradients behind the content */
+  body{
+    margin:0;
+    color: var(--ink);
+    font-family: 'Merriweather', serif;
+    line-height: 1.7;
+    background:
+      radial-gradient(1000px 600px at 10% -10%, var(--grad2-start), transparent 70%),
+      radial-gradient(800px 500px at 90% 10%, var(--grad2-end), transparent 70%),
+      linear-gradient(135deg, var(--grad1-start), var(--grad1-end));
+    background-attachment: fixed;
+  }
+  
+  /* Do not touch navbar, hero, or footer styles (kept from your site/global CSS) */
+  /* (If this page is standalone, you may keep the same block you shared earlier.) */
+  
+  /* ---------- Article Layout ---------- */
+  .page-wrap{
+    padding: clamp(20px, 3vw, 40px);
+  }
+  
+  .pro-article{
+    max-width: 980px;
+    margin: 0 auto 64px auto;
+    background: var(--bg-card);
+    border-radius: 18px;
+    box-shadow: var(--shadow);
+    padding: clamp(24px, 4vw, 48px);
+    border: 1px solid var(--ring);
+  }
+  
+  /* ---------- Header ---------- */
+  .article-header{ margin-bottom: 18px; }
+  .kicker{
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: .12em;
+    font-weight: 600;
+    color: var(--accent);
+    margin: 0 0 6px 0;
+    font-size: .8rem;
+  }
+  .article-title{
+    margin: 0 0 6px 0;
+    line-height: 1.25;
+    font-size: clamp(1.6rem, 2.4vw, 2.2rem);
+    font-weight: 700;
+  }
+  .subtitle{ color: var(--muted); margin: 0 0 8px 0; }
+  .meta, .disclaimer{ font-size: .95rem; color: var(--muted); margin: 4px 0; }
+  .disclaimer strong{ color: #1b3b63; }
+  
+  /* ---------- Typography ---------- */
+  h2{
+    font-size: clamp(1.2rem, 2vw, 1.6rem);
+    margin: 28px 0 10px 0;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    line-height: 1.3;
+  }
+  h3{
+    font-size: clamp(1.05rem, 1.6vw, 1.2rem);
+    margin: 20px 0 8px 0;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+  }
+  p{ margin: 10px 0 14px 0; }
+  em{ font-style: italic; }
+  
+  /* ---------- Lists ---------- */
+  ul{ padding-left: 1.2rem; margin: 8px 0 14px 0; }
+  .links-inline{
+    display:flex; flex-wrap:wrap; gap:12px;
+    list-style:none; padding-left:0; margin:10px 0 0 0;
+  }
+  .links-inline a{ color: var(--accent); text-decoration: none; border-bottom: 1px dashed rgba(31,107,199,.35); }
+  .links-inline a:hover{ color:#0f57b1; border-bottom-color: rgba(31,107,199,.7); }
+  
+  /* ---------- Notes / Callouts ---------- */
+  .note{
+    background: linear-gradient(135deg, #f6fbff, #eef6ff);
+    border: 1px solid var(--ring);
+    border-radius: 12px;
+    padding: 12px 14px;
+    font-size: .975rem;
+  }
+  
+  /* ---------- Comparison Table ---------- */
+  .table-wrap{ overflow-x:auto; margin-top: 6px; }
+  .compare-table{
+    width: 100%;
+    border-collapse: collapse;
+    font-family: 'Merriweather', serif;
+    border: 1px solid var(--ring);
+    box-shadow: 0 4px 10px rgba(14,37,64,.04);
+    border-radius: 12px;
+    overflow: hidden;
+  }
+  .compare-table th, .compare-table td{
+    text-align: left;
+    padding: 14px 16px;
+    vertical-align: top;
+  }
+  .compare-table thead th{
+    background: linear-gradient(135deg, var(--grad2-start), var(--grad2-end));
+    color: #fff;
+    font-weight: 700;
+  }
+  .compare-table tbody tr:nth-child(even){ background: #f8fbff; }
+  .compare-table tbody tr:hover{ background: #f2f8ff; }
+  
+  /* ---------- Links Grid ---------- */
+  .link-grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 14px;
+    margin-top: 10px;
+  }
+  .link-card{
+    background: #fafcff;
+    border: 1px solid var(--ring);
+    border-radius: 14px;
+    padding: 14px 16px;
+    box-shadow: 0 4px 10px rgba(14,37,64,.04);
+  }
+  .link-card h3{ margin: 0 0 8px 0; }
+  .link-card ul{ margin: 6px 0 0 0; }
+  .link-card li{ margin: 6px 0; }
+  .link-card a{
+    color: var(--accent);
+    text-decoration: none;
+    border-bottom: 1px dashed rgba(31,107,199,.35);
+    transition: border-color .2s ease, color .2s ease;
+  }
+  .link-card a:hover{ color: #0f57b1; border-bottom-color: rgba(31,107,199,.7); }
+  
+  /* Multi-column list */
+  .columns{
+    columns: 2; column-gap: 26px; padding-left: 1.1rem;
+  }
+  @media (max-width: 640px){ .columns{ columns: 1; } }
+  
+  /* ---------- Sample schedules ---------- */
+  .samples{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+  .sample{
+    background: #ffffff;
+    border: 1px solid var(--ring);
+    border-radius: 14px;
+    padding: 12px 16px;
+    box-shadow: 0 4px 10px rgba(14,37,64,.04);
+  }
+  
+  /* ---------- CTA ---------- */
+  .cta{ margin-top: 8px; padding-top: 4px; }
+  .btn{
+    display: inline-block;
+    padding: 10px 16px;
+    border-radius: 10px;
+    background: linear-gradient(135deg, var(--grad2-start), var(--grad2-end));
+    color: white;
+    font-weight: 700;
+    text-decoration: none;
+    box-shadow: 0 6px 18px rgba(15,60,110,.25);
+    transition: transform .15s ease, box-shadow .15s ease;
+  }
+  .btn:hover{ transform: translateY(-1px); box-shadow: 0 8px 24px rgba(15,60,110,.30); }
+  
+  /* ---------- Accessibility tweaks ---------- */
+  a:focus{
+    outline: 3px solid #98c7ff;
+    outline-offset: 2px;
+  }
+  .sr-only{
+    position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); border:0;
+  }
+  
+  /* (Optional) Keep your existing navbar/hero/footer styles below unchanged if this page is standalone.
+     Otherwise, rely on your global CSS. */
+  
