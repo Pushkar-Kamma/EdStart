@@ -81,12 +81,12 @@
   }
   .hero h1 {
     font-family: 'Merriweather', serif;
-    font-size: 160px;
+    font-size: 120px;
   }
   .hero h2 {
     
     font-family:  "Segoe Script", cursive;
-    font-size: 60px;
+    font-size: 48px;
   }
   .hero .highlight {
     color: #FFC107;

@@ -65,8 +65,8 @@
     background: linear-gradient(180deg, #004D99, #002B5C), url('heroimg.png') center/cover no-repeat;
     display: flex; flex-direction: column; justify-content: center; color: #fff;
   }
-  .hero h1 { font-family:'Merriweather', serif; font-size:160px; }
-  .hero h2 { font-family:"Segoe Script", cursive; font-size:60px; }
+  .hero h1 { font-family:'Merriweather', serif; font-size: 120px; }
+  .hero h2 { font-family:"Segoe Script", cursive; font-size: 48px; }
   .hero .highlight { color:#FFC107; font-weight:bold; }
   
   footer {

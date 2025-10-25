@@ -27,8 +27,19 @@
     background-attachment: fixed;
   }
   
-  /* Do not touch navbar, hero, or footer styles (kept from your site/global CSS) */
-  /* (If this page is standalone, you may keep the same block you shared earlier.) */
+/* Do not touch navbar, hero, or footer styles (kept from your site/global CSS) */
+/* (If this page is standalone, you may keep the same block you shared earlier.) */
+
+/* Hero typography (shared sizing across article pages) */
+.hero h1 {
+  font-family: 'Merriweather', serif;
+  font-size: 120px;
+}
+
+.hero h2 {
+  font-family: "Segoe Script", cursive;
+  font-size: 48px;
+}
   
   /* ---------- Article Layout ---------- */
   .page-wrap{
