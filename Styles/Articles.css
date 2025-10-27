@@ -81,12 +81,12 @@
   }
   .hero h1 {
     font-family: 'Merriweather', serif;
-    font-size: 120px;
+    font-size: clamp(2.6rem, 7vw, 120px);
   }
   .hero h2 {
     
     font-family:  "Segoe Script", cursive;
-    font-size: 48px;
+    font-size: clamp(1.4rem, 3.8vw, 48px);
   }
   .hero .highlight {
     color: #FFC107;
@@ -116,10 +116,57 @@
     margin: 0 auto;
     max-height: 3.5vh;
   }
-  .social-icons img {
+.social-icons img {
     width: 50px;
     margin: 0 10px;
   }
+
+/* Responsive tweaks */
+@media (max-width: 1100px) {
+  .navbar-container {
+    padding: 0 24px;
+  }
+  .nav-links {
+    margin-right: 40px;
+    gap: 18px;
+  }
+  .edlogo img {
+    margin-left: 12px;
+  }
+}
+
+@media (max-width: 900px) {
+  .navbar-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    height: auto;
+  }
+  .nav-links {
+    margin: 0;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .edlogo {
+    margin-left: 0;
+  }
+  .edlogo img {
+    margin: 10px;
+  }
+}
+
+@media (max-width: 640px) {
+  .navbar {
+    padding: 12px 16px;
+  }
+  .nav-links {
+    gap: 12px;
+  }
+  .footer-container {
+    flex-direction: column;
+    gap: 12px;
+  }
+}
   .back{
     background: linear-gradient(135deg, #FFECB3, #FFD54F);
     color: #fff;
@@ -136,3 +183,4 @@
 .highlight-box{
   background-color: #FFD54F;
 }
+

@@ -141,12 +141,12 @@
   }
   .hero h1 {
     font-family: 'Merriweather', serif;
-    font-size: 160px;
+    font-size: clamp(2.8rem, 8vw, 160px);
   }
   .hero h2 {
     
     font-family:  "Segoe Script", cursive;
-    font-size: 60px;
+    font-size: clamp(1.7rem, 4.5vw, 60px);
   }
   .hero .highlight {
     color: #FFC107;
@@ -187,7 +187,7 @@
   }
   .our-work h2{
         font-family: 'Nunito',sans-serif;
-        font-size: 80px;
+        font-size: clamp(2.1rem, 5.5vw, 80px);
         font-weight: 900;
     }
   
@@ -200,7 +200,7 @@
   }
   .impact h2 {
     font-family: 'Nunito',sans-serif;
-    font-size: 80px;
+    font-size: clamp(2.1rem, 5.5vw, 80px);
     font-weight: 900;
   }
   .impact-stats {
@@ -242,7 +242,7 @@
   }
   .newsletter h2{
     font-family: 'Nunito',sans-serif;
-    font-size: 80px;
+    font-size: clamp(2.1rem, 5.5vw, 80px);
     font-weight: 900;
     color: #333;
   }
@@ -296,7 +296,7 @@
   
   .volunteer-content h2 {
     font-family: 'Nunito',sans-serif;
-    font-size: 80px;
+    font-size: clamp(2.1rem, 5.5vw, 80px);
     font-weight: 900;
     margin-bottom: 20px;
     color: #333;
@@ -333,10 +333,87 @@
     transition: all 0.3s ease;
   }
   
-  .volunteer .button:hover {
+.volunteer .button:hover {
     background: #002B5C;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
   }
+
+/* Responsive tweaks */
+@media (max-width: 1100px) {
+  .navbar-container {
+    padding: 0 24px;
+  }
+  .nav-links {
+    margin-right: 60px;
+    gap: 18px;
+  }
+  .edlogo img {
+    margin-left: 24px;
+  }
+  .work-cards,
+  .impact-stats {
+    gap: 40px;
+  }
+}
+
+@media (max-width: 900px) {
+  .navbar-container {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    gap: 12px;
+  }
+  .nav-links {
+    margin: 0;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .edlogo {
+    margin-left: 0;
+  }
+  .edlogo img {
+    margin: 10px;
+  }
+  .work-cards,
+  .impact-stats {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .work-card,
+  .stat {
+    width: 100%;
+    max-width: 320px;
+  }
+  .mission-content {
+    gap: 24px;
+  }
+}
+
+@media (max-width: 640px) {
+  .navbar {
+    padding: 12px 16px;
+  }
+  .nav-links {
+    gap: 12px;
+  }
+  .hero {
+    padding: 80px 20px;
+  }
+  .mission-content,
+  .work-cards,
+  .impact-stats {
+    flex-direction: column;
+    align-items: center;
+  }
+  .newsletter p,
+  .volunteer-content p {
+    font-size: 16px;
+  }
+  .footer-container {
+    flex-direction: column;
+    gap: 12px;
+  }
+}
   /* Our Mission Section */
 .our-mission {
     text-align: center;
@@ -348,7 +425,7 @@
   
   .our-mission h2 {
     font-family: 'Nunito',sans-serif;
-    font-size: 80px;
+    font-size: clamp(2.1rem, 5.5vw, 80px);
     font-weight: 900;
     margin-bottom: 30px;
     color: #333;
